@@ -1,4 +1,7 @@
-# rockpaperseiser
+# rockpaperscissor- an amazing game in python
+rock
+paper
+scissor
 
 
 A simple rock-paper-scissors game made with python (Text-based) Made for windows. 
