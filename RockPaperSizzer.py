@@ -3,14 +3,14 @@ import random as rdm
 #Define game function
 
 def game():
-	print("Welcome to Rock Paper Sizzer\n")
+	print("Welcome to Rock Paper Scissor\n")
 	
 	print("INFO :-")
 	Name = str(input("Your Name : "))
 	City = str(input("Your City : "))
 	
 	print("\nGame Rules :")
-	print("1 ] R=Rock P=Paper S=Sizzer\n2 ] Rock blends Sizzer\n3 ] Paper covers Rock\n4 ] Sizzer cuts Paper\n5 ] If Player won 1 point\n    added in players account\n6 ] If Bot won 1 point goes\n    in bots account\n7 ] For Tie one point add\n    in both players account\n8 ] Total matches compalsory\n9 ] At end Winner will be annouced\n")
+	print("1 ] R=Rock P=Paper S=Scissor\n2 ] Rock blends Scissor\n3 ] Paper covers Rock\n4 ] Scissor cuts Paper\n5 ] If Player won 1 point\n    added in players account\n6 ] If Bot won 1 point goes\n    in bots account\n7 ] For Tie one point add\n    in both players account\n8 ] Total matches compalsory\n9 ] At end Winner will be annouced\n")
 	
 	Count= 10
 	Your_score=0
@@ -24,8 +24,8 @@ def game():
 		Count-=1
 		print("Round No = ",10-Count)
 		print("\nYour Choise :\n")
-		print("Rock = 1\nPaper = 2\nSizzer = 3\n")
-		List2 = ["Rock","Paper","Sizzer"]
+		print("Rock = 1\nPaper = 2\nScissor = 3\n")
+		List2 = ["Rock","Paper","Scissor"]
 		P= int(input("Choose 1/2/3 = " ))
 		B =rdm.randint(1,3)
 		
@@ -42,7 +42,7 @@ def game():
 			print("Your choise :",List2[P-1])
 			print("Bot choise :",List2[B-1])
 			print("____Winner Winner____\n")
-			print("\nRock blends Sizzer\n")
+			print("\nRock blends Scissor\n")
 			Your_score += 1
 			print("Your Score : ",Your_score)
 			print("Bot Score : ",Bot_score,"\n")
