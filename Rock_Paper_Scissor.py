@@ -1,3 +1,5 @@
+#This code is only for the begginers
+
 import random as rdm
 import sys
 
@@ -151,6 +153,9 @@ def clear_records():
 	file. close()
 	print("\nRecords Clear Successfully.....\n")
 	menu()
+
+
+# Define Duplicate Records	
 	
 def menu_dup_record():
 		print("\nDuplicate Records: \n1 ] Type 1 to Create  ==> Winner Entry\n2 ] Type 2 to Create ==> Looser Entry\n3 ] Type 3 to Create ==> Tied Entry\n=>")
@@ -178,7 +183,7 @@ def dup_record():
 		string += ("~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		R.write(string)
 	
-
+#  Define menu functionality
 
 def menu():
 	
@@ -198,8 +203,8 @@ def menu():
 		print("/nPlease make valid choice...")
 		menu()
 
-	
+		
 
-# This is menu function	
-	
+#  Menu Function Call
+
 menu()
