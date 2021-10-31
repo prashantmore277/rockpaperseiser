@@ -6,6 +6,9 @@ import sys
 #Define game function
 
 def game():
+	
+	
+	
 	print("Welcome to Rock Paper Scissor\n")
 	
 	print("INFO :-")
@@ -18,10 +21,10 @@ def game():
 	Count= 10
 	Your_score=0
 	Bot_score=0
-	print("~~~~~~~~~~~~~~~~~~~~~~~\n")
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 	print("Your Score : ",Your_score)
 	print("Bot Score : ",Bot_score)
-	print("\n~~~~~~~~~~~~~~~~~~~~~~~\n")
+	print("\n~~~~~~~~~~~~~~~~~~~~~~~~\n")
 	while (Count>0):
 		print("~~~~~~~~~~~~~~~~~~~~~~~\n")
 		Count-=1
@@ -57,7 +60,7 @@ def game():
 			print("Bot choice :",List2[B-1])
 			print("\n")
 			print("  🤠🤠🤠🤠🤠🤠🤠🤠")
-			print("____Winner Winner____")
+			print("_____Winner Winner_____")
 			print("\nPaper covers Rock\n")
 			Your_score += 1
 			print("Your Score : ",Your_score)
@@ -68,7 +71,7 @@ def game():
 			print("Your choice :",List2[P-1])
 			print("Bot choice :",List2[B-1])
 			print("\n")
-			print("____Winner Winner____")
+			print("_____Winner Winner_____")
 			print("\nScissor cuts Paper\n")
 			Your_score += 1
 			print("Your Score : ",Your_score)
@@ -115,7 +118,7 @@ def game():
 			print ("😑😑",status,"😑😑")
 			
 			#print("~~~~~~~~~~~~~~~~~~~~~~\n")
-			print("~~~~~~~~~~~~~~~~~~~~~~\n")
+			print("~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 			
 # Create a record and save details of Game
 
@@ -130,7 +133,7 @@ def game():
 		string += ("\n")
 		string += str("Game Status")+ str(" ") +  str(status)
 		string += ("\n")
-		string += ("~~~~~~~~~~~~~~~~~~~~~~~~")
+		string += ("~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		R.write(string)
 	menu()
 # Define record function
@@ -177,12 +180,13 @@ def dup_record():
 		string += ("\n")
 		string += str("Game Status")+ str(" ") +str(list3[Y-1])
 		string += ("\n")
-		string += ("~~~~~~~~~~~~~~~~~~~~~~~~")
+		string += ("~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		R.write(string)
 	
 #  Define menu functionality
 
 def menu():
+	
 	Z=int(input("\nMain menu: \n1 ] Type 1 to open ==> GAME\n2 ] Type 2 to open ==> RECORDS\n3 ] Type 3 to open ==> CLEAR RECORDS\n4 ] Type 4 to open ==> Duplicate RECORDS\n5 ] Type 5 to exit ==> GAME\n\n=>"))
 	
 	if (Z==1):
@@ -199,6 +203,8 @@ def menu():
 		print("/nPlease make valid choice...")
 		menu()
 
-	
+		
+
 #  Menu Function Call
+
 menu()
